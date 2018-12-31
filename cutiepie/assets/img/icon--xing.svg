@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--xing</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-296.000000, -290.000000)">
+        <g id="icon--xing" transform="translate(297.000000, 291.000000)">
+            <path d="M24,0 C10.746,0 0,10.746 0,24 C0,37.254 10.746,48 24,48 C37.254,48 48,37.254 48,24 C48,10.746 37.254,0 24,0 Z" id="Path" stroke="#BBE9F0"></path>
+            <polygon id="Path" fill="#FFFFFF" points="16.978 21.526 13.75 15.992 19.512 15.992 22.714 21.51 17.912 29.992 12.178 29.992"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="33.878 38 28.182 38 21.972 26.722 31.388 10 37.142 10 27.728 26.722"></polygon>
+        </g>
+    </g>
+</svg>
