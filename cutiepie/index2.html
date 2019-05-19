@@ -1,329 +1,113 @@
-<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
-    <meta charset="UTF-8">
-    <title>Happy Birthday</title>
-    <style>
-        /* If you can't see it just hit space in here*/
-        body {
-            font-family:'Wendy One', sans-serif;
-        }
-        
-        body {
-background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
-background-image: -webkit-radial-gradient(#374566, #010203);
-background-image: -moz-radial-gradient(#374566, #010203);
-background-image: -o-radial-gradient(#374566, #010203);
-background-image: radial-gradient(#374566, #010203);
-}
-        span {
-            text-transform: uppercase;
-        }
-        .container {
-            width: 800px;
-            height: 420px;
-            padding: 10px;
-            margin: 0 auto;
-            position: relative;
-        }
-        .balloon {
-            width: 738px;
-            margin: 0 auto;
-            padding-top: 30px;
-            position: relative;
-        }
-        .balloon > div {
-            width: 104px;
-            height: 140px;
-            background: rgba(182, 15, 97, 0.9);
-            border-radius: 0;
-            border-radius: 80% 80% 80% 80%;
-            margin: 0 auto;
-            position: absolute;
-            padding: 10px;
-            box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
-            -webkit-transform-origin: bottom center;
-        }
-        .balloon > div:nth-child(1) {
-            background: rgba(182, 15, 97, 0.9);
-            left: 0;
-            box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
-            -webkit-animation: balloon1 6s ease-in-out infinite;
-            -moz-animation: balloon1 6s ease-in-out infinite;
-            -o-animation: balloon1 6s ease-in-out infinite;
-            animation: balloon1 6s ease-in-out infinite;
-        }
-        .balloon > div:nth-child(1):before {
-            color: rgba(182, 15, 97, 0.9);
-        }
-        .balloon > div:nth-child(2) {
-            background: rgba(242, 112, 45, 0.9);
-            left: 120px;
-            box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
-            -webkit-animation: balloon2 6s ease-in-out infinite;
-            -moz-animation: balloon2 6s ease-in-out infinite;
-            -o-animation: balloon2 6s ease-in-out infinite;
-            animation: balloon2 6s ease-in-out infinite;
-        }
-        .balloon > div:nth-child(2):before {
-            color: rgba(242, 112, 45, 0.9);
-        }
-        .balloon > div:nth-child(3) {
-            background: rgba(45, 181, 167, 0.9);
-            left: 240px;
-            box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
-            -webkit-animation: balloon4 6s ease-in-out infinite;
-            -moz-animation: balloon4 6s ease-in-out infinite;
-            -o-animation: balloon4 6s ease-in-out infinite;
-            animation: balloon4 6s ease-in-out infinite;
-        }
-        .balloon > div:nth-child(3):before {
-            color: rgba(45, 181, 167, 0.9);
-        }
-        .balloon > div:nth-child(4) {
-            background: rgba(190, 61, 244, 0.9);
-            left: 360px;
-            box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
-            -webkit-animation: balloon1 5s ease-in-out infinite;
-            -moz-animation: balloon1 5s ease-in-out infinite;
-            -o-animation: balloon1 5s ease-in-out infinite;
-            animation: balloon1 5s ease-in-out infinite;
-        }
-        .balloon > div:nth-child(4):before {
-            color: rgba(190, 61, 244, 0.9);
-        }
-        .balloon > div:nth-child(5) {
-            background: rgba(180, 224, 67, 0.9);
-            left: 480px;
-            box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
-            -webkit-animation: balloon3 5s ease-in-out infinite;
-            -moz-animation: balloon3 5s ease-in-out infinite;
-            -o-animation: balloon3 5s ease-in-out infinite;
-            animation: balloon3 5s ease-in-out infinite;
-        }
-        .balloon > div:nth-child(5):before {
-            color: rgba(180, 224, 67, 0.9);
-        }
-        .balloon > div:nth-child(6) {
-            background: rgba(242, 194, 58, 0.9);
-            left: 600px;
-            box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
-            -webkit-animation: balloon2 3s ease-in-out infinite;
-            -moz-animation: balloon2 3s ease-in-out infinite;
-            -o-animation: balloon2 3s ease-in-out infinite;
-            animation: balloon2 3s ease-in-out infinite;
-        }
-        .balloon > div:nth-child(6):before {
-            color: rgba(242, 194, 58, 0.9);
-        }
-        .balloon > div:before {
-            color: rgba(182, 15, 97, 0.9);
-            position: absolute;
-            bottom: -11px;
-            left: 52px;
-            content:"▲";
-            font-size: 1em;
-        }
-        span {
-            font-size: 4.8em;
-            color: white;
-            position: relative;
-            top: 30px;
-            left: 50%;
-            margin-left: -27px;
-        }
-        /*BALLOON 1 4*/
-        @-webkit-keyframes balloon1 {
-            0%, 100% {
-                -webkit-transform: translateY(0) rotate(-6deg);
-            }
-            50% {
-                -webkit-transform: translateY(-20px) rotate(8deg);
-            }
-        }
-        @-moz-keyframes balloon1 {
-            0%, 100% {
-                -moz-transform: translateY(0) rotate(-6deg);
-            }
-            50% {
-                -moz-transform: translateY(-20px) rotate(8deg);
-            }
-        }
-        @-o-keyframes balloon1 {
-            0%, 100% {
-                -o-transform: translateY(0) rotate(-6deg);
-            }
-            50% {
-                -o-transform: translateY(-20px) rotate(8deg);
-            }
-        }
-        @keyframes balloon1 {
-            0%, 100% {
-                transform: translateY(0) rotate(-6deg);
-            }
-            50% {
-                transform: translateY(-20px) rotate(8deg);
-            }
-        }
-        /* BAllOON 2 5*/
-        @-webkit-keyframes balloon2 {
-            0%, 100% {
-                -webkit-transform: translateY(0) rotate(6eg);
-            }
-            50% {
-                -webkit-transform: translateY(-30px) rotate(-8deg);
-            }
-        }
-        @-moz-keyframes balloon2 {
-            0%, 100% {
-                -moz-transform: translateY(0) rotate(6deg);
-            }
-            50% {
-                -moz-transform: translateY(-30px) rotate(-8deg);
-            }
-        }
-        @-o-keyframes balloon2 {
-            0%, 100% {
-                -o-transform: translateY(0) rotate(6deg);
-            }
-            50% {
-                -o-transform: translateY(-30px) rotate(-8deg);
-            }
-        }
-        @keyframes balloon2 {
-            0%, 100% {
-                transform: translateY(0) rotate(6deg);
-            }
-            50% {
-                transform: translateY(-30px) rotate(-8deg);
-            }
-        }
-        /* BAllOON 0*/
-        @-webkit-keyframes balloon3 {
-            0%, 100% {
-                -webkit-transform: translate(0, -10px) rotate(6eg);
-            }
-            50% {
-                -webkit-transform: translate(-20px, 30px) rotate(-8deg);
-            }
-        }
-        @-moz-keyframes balloon3 {
-            0%, 100% {
-                -moz-transform: translate(0, -10px) rotate(6eg);
-            }
-            50% {
-                -moz-transform: translate(-20px, 30px) rotate(-8deg);
-            }
-        }
-        @-o-keyframes balloon3 {
-            0%, 100% {
-                -o-transform: translate(0, -10px) rotate(6eg);
-            }
-            50% {
-                -o-transform: translate(-20px, 30px) rotate(-8deg);
-            }
-        }
-        @keyframes balloon3 {
-            0%, 100% {
-                transform: translate(0, -10px) rotate(6eg);
-            }
-            50% {
-                transform: translate(-20px, 30px) rotate(-8deg);
-            }
-        }
-        /* BAllOON 3*/
-        @-webkit-keyframes balloon4 {
-            0%, 100% {
-                -webkit-transform: translate(10px, -10px) rotate(-8eg);
-            }
-            50% {
-                -webkit-transform: translate(-15px, 20px) rotate(10deg);
-            }
-        }
-        @-moz-keyframes balloon4 {
-            0%, 100% {
-                -moz-transform: translate(10px, -10px) rotate(-8eg);
-            }
-            50% {
-                -moz-transform: translate(-15px, 10px) rotate(10deg);
-            }
-        }
-        @-o-keyframes balloon4 {
-            0%, 100% {
-                -o-transform: translate(10px, -10px) rotate(-8eg);
-            }
-            50% {
-                -o-transform: translate(-15px, 10px) rotate(10deg);
-            }
-        }
-        @keyframes balloon4 {
-            0%, 100% {
-                transform: translate(10px, -10px) rotate(-8eg);
-            }
-            50% {
-                transform: translate(-15px, 10px) rotate(10deg);
-            }
-        }
-        h1 {
-            position: relative;
-            top: 200px;
-            text-align: center;
-            color: white;
-            font-size: 3.5em;
-        }
-    </style>
-    <script>
-        window.open = function() {};
-        window.print = function() {};
-        // Support hover state for mobile.
-        if (false) {
-            window.ontouchstart = function() {};
-        }
-    </script>
-    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
-    <meta content="clickberry-extension-here">
-    <meta content="clickberry-extension-here">
-    <style type="text/css"></style>
-    <style type="text/css"></style>
-<style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
 
-<body>
-    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-    <div class="container">
-        <div class="balloon">
-            <div><span>☺</span>
-            </div>
-            <div><span>B</span>
-            </div>
-            <div><span>D</span>
-            </div>
-            <div><span>A</span>
-            </div>
-            <div><span>Y</span>
-            </div>
-            <div><span>!</span>
-            </div>
-        </div>
-         <h1>Cutiepie</h1>
+<!DOCTYPE html>
+<html lang="de-ch">
+<head>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love you Cutiepie</title>
+ 
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullpage.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+  <script src="assets/js/modernizr.custom.js"></script>
+  <script src="assets/js/detectizr.min.js"></script>
+</head>
+<body class="js-body">
+  <main class="js-fp">
+<header class="js-fp__section o-container o-container--fh c-header u-z--02">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col c-header__content u-span--12 u-span--05m">
+      <h1 class="js-wow u-fs--03 u-anim--fadeInUp">Only for you my love, <span id="nameOne"></span></h1>
+      <p class="js-wow u-fs--04 u-anim--fadeInUp u-anim-dly--02"><br>Thori si nadan hai thra drti hai... Tabhi mere liye kitta krti hai<br />Sayad mujhe khone se drti hai tabhi kuch khne se drti hai...<br />Tu khul k bol o Juliet ye Romeo uro ki trh na..<br />Thori si nadan hai thra drti hai... Fir v mere liye kitta krti hai....!!!<br /><br />©vishal6404 <br> Isliye tere kuch shabdo ko is duniya k iss hisse me jor rha <br>Please Scroll Down </p>
     </div>
-    <script>
-        
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage('resize', "*");
-        }
-    </script>
-    
-    <div class="container">
-            <h1 id="head">Birthday Countdown ❤️</h1>
-            <ul>
-              <li><span id="days"></span><br>days</li>
-              <li><span id="hours"></span><br>Hours</li>
-              <li><span id="minutes"></span><br>Minutes</li>
-              <li><span id="seconds"></span><br>Seconds</li>
-            </ul>
-          </div>
-    <script src="a.js"></script>
-    <link href="a.css" rel="stylesheet" type="text/css">
+    <div class="o-grid__col c-header__media u-span--12 u-span--07m">
+      <div id="astronauts" class="js-wow u-anim--fadeInUp u-anim-dly--04"></div>
+    </div>
+  </div>
+</header>
+<section class="js-fp__section o-container o-container--fh c-intro u-bg--secondary u-z--02">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--10m u-push--01m u-ta--center">
+      <h2 class="js-wow u-anim--fadeInUp">My girl plan...</h2>
+      <p class="js-wow u-anim--fadeInUp u-anim-dly--02 u-fs--04">                     People:-  1st jan ko picnic krna h ...sabko msgs krna hai...12 baje se hi phone pe chipke rehna hai jese uske baad to duniya hi khatm ho jayegi...<br><br>Me:-    31st se Sabse pehle phone switch off karna hai....fir din bhar sona hai....<br>©priya_v</p>
+      
+    </div>
+  </div>
+</section>
+<section class="js-fp__section js-transbg o-container o-container--fh c-scene-intro u-z--02" data-color="light">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--10m u-push--01m">
+      <h2 class="js-wow u-anim--fadeInUp">Being mah winner girl</h2>
+      <p class="js-wow u-fs--04 u-anim--fadeInUp u-anim-dly--02"> Losers follow d rules but d legends r dos who break rules<br>Then come.. ultra legends who make rules<br>©priya_v</p>
+    </div>
+  </div>
+</section>
 
-</body></html>
+
+
+<section class="js-fp__section js-transbg o-container o-container--fh c-scene-outro u-z--03" data-color="secondary">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--10m u-push--01m">
+              <p class="js-wow u-fs--04 u-ta--center u-anim--zoomIn"> It was quite hard but not impossible<br>:: to move on<br>:: to start new love story<br>:: to forget sm1<br>:: to hide tears <br>:: to smile while upset<br>:: to give up any valuable things<br>©priya_v</p>
+            <p class="js-wow u-fs--02 u-lh--0104 u-ta--center u-anim--zoomIn">I really Love You Cutiepie</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="js-fp__section js-transbg o-container o-container--fh c-scene-intro u-z--02" data-color="light">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--10m u-push--01m">
+      <h2 class="js-wow u-anim--fadeInUp">Everyones has wings<br>But Things dat matters -- birds takes risk to fly but we humans scare of falling<br>©priya_v</h2>
+      <p class="js-wow u-fs--04 u-anim--fadeInUp u-anim-dly--02">But my love with me it's not possible</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="js-fp__section js-transbg o-container o-container--fh c-scene-outro u-z--03" data-color="secondary">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--10m u-push--01m">
+            <p class="js-wow u-fs--02 u-lh--0104 u-ta--center u-anim--zoomIn">Usne shi hi kha tha<br>Yadi upar wala kisi ka sath chinta hai to kisi ko sath nibhane bhejta bhi hai<br>©priya_v</p>
+    </div>
+  </div>
+</section>
+<section class="js-fp__section js-transbg o-container o-container--fh u-z--02" data-color="light">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--10m u-push--01m u-ta--center">
+      <h2 class="js-wow u-fs--04 u-anim--fadeInUp">A little Glimpse♥️</h2>
+      <p class="js-wow u-anim--fadeInUp u-anim-dly--02 u-fs--02"> <h5>He  : you know my choice is not so good.<br>She : really?<br>And they order something<br><br>After some time<br><br>He : my choice was not bad isn't that?<br>She : i know <br>She : your choice is not bad, <br>          Cause you choosed me<br><br>And she smiles☺️<br><br>He. : ♥️<br>©vishal6404 </h5></p>
+    </div>
+  </div>
+</section>
+
+<footer class="js-fp__section o-container o-container--fh c-footer c-footer--part01 u-z--02">
+  <div class="o-grid o-grid--fh u-ai--center">
+    <div class="o-grid__col u-span--12 u-span--05m">
+      <h3>Wo pal</h3>
+      <h17 class="js-wow u-fs--03 u-anim--fadeInUp">She: Kya dekh rhe ho<br>He  : pta ni but jab v tumhe dekhta tumhari aankho me kho jaata..<br>She: Acha<br>He  : Sachi pta ni ye tumhari aankhe mujhe kuch pal k liye is duniya se alg kr deti..<br>She: Thanx Thanx<br>He   : ♥️<br>©vishal6404</h17>
+      <p><br>Thanks for reading this cutiepie just gave a little effort to make this ♥️</p>
+
+      <p><center><br>Made with <span style="color: #e25555;">&#9829;</span> By vishal</center></p>
+
+
+      
+    </div>
+    <div class="o-grid__col c-footer__media u-span--12 u-span--07m">
+      <div id="party" class="js-wow u-anim--fadeInUp u-anim-dly--04"></div>
+    </div>
+  </div>
+</footer>
+  </main>
+  <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+</body>
+</html>
