@@ -1,0 +1,473 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 63% "Microsoft YaHei", Lora, Georgia, "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  color: #333333; }
+
+/*.box { @include border-radius(10px); }*/
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@keyframes soar {
+  50% {
+    transform: translate(0, -14px); } }
+@-webkit-keyframes soar {
+  50% {
+    -webkit-transform: translate(0, -14px); } }
+@-moz-keyframes soar {
+  50% {
+    -moz-transform: translate(0, -14px); } }
+@keyframes swing {
+  50% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); } }
+@-webkit-keyframes swing {
+  50% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); } }
+@-moz-keyframes swing {
+  50% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); } }
+@keyframes striking {
+  0% {
+    background-position: 0px -248px;
+    opacity: 1.0; }
+
+  7% {
+    background-position: 0px 0px;
+    opacity: 1.0; }
+
+  10% {
+    opacity: 0.1; }
+
+  100% {
+    opacity: 0.0; } }
+@-webkit-keyframes striking {
+  0% {
+    background-position: 0px -248px;
+    opacity: 1.0; }
+
+  7% {
+    background-position: 0px 0px;
+    opacity: 1.0; }
+
+  50% {
+    background-position: 0px 0px;
+    opacity: 0.8; }
+
+  100% {
+    opacity: 0.0; } }
+@-moz-keyframes striking {
+  0% {
+    background-position: 0px -248px;
+    opacity: 1.0; }
+
+  7% {
+    background-position: 0px 0px;
+    opacity: 1.0; }
+
+  50% {
+    background-position: 0px 0px;
+    opacity: 1.0; }
+
+  100% {
+    opacity: 0.0; } }
+@-o-keyframes striking {
+  0% {
+    background-position: 0px -248px;
+    opacity: 1.0; }
+
+  7% {
+    background-position: 0px 0px;
+    opacity: 1.0; }
+
+  100% {
+    opacity: 0.0; } }
+@keyframes drumming-up {
+  0% {
+    background-position: right 0px; }
+
+  95% {
+    background-position: right 5px; } }
+@-webkit-keyframes drumming-up {
+  0% {
+    background-position: right 0px; }
+
+  95% {
+    background-position: right 5px; } }
+@-moz-keyframes drumming-up {
+  0% {
+    background-position: right 0px; }
+
+  95% {
+    background-position: right 5px; } }
+@-o-keyframes drumming-up {
+  0% {
+    background-position: right 0px; }
+
+  95% {
+    background-position: right 5px; } }
+@-webkit-keyframes rocking {
+  30% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); }
+
+  60% {
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg); } }
+@-o-keyframes rocking {
+  30% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); }
+
+  60% {
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg); } }
+@-moz-keyframes rocking {
+  30% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); }
+
+  60% {
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg); } }
+@keyframes rocking {
+  30% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg); }
+
+  60% {
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg); } }
+body {
+  background: #a7d3db;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3ZDNkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iI2NmZGRjOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk0JSIgc3RvcC1jb2xvcj0iI2UyZTNjZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2VhYmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #a7d3db 0%, #cfddc9 88%, #e2e3ce 94%, #fceabd 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a7d3db), color-stop(88%, #cfddc9), color-stop(94%, #e2e3ce), color-stop(100%, #fceabd));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a7d3db 0%, #cfddc9 88%, #e2e3ce 94%, #fceabd 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a7d3db 0%, #cfddc9 88%, #e2e3ce 94%, #fceabd 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a7d3db 0%, #cfddc9 88%, #e2e3ce 94%, #fceabd 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #a7d3db 0%, #cfddc9 88%, #e2e3ce 94%, #fceabd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7d3db', endColorstr='#fceabd',GradientType=0 );
+  /* IE6-8 */ }
+
+.scenario {
+  width: 960px;
+  height: 750px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+  .scenario .scroll-tips {
+    position: absolute;
+    top: 460px;
+    font-size: 2em;
+    color: #FAFDFC;
+    background: url("../img/tips.png") right 0px no-repeat;
+    padding-right: 17px;
+    width: 185px;
+    height: 40px;
+    animation: drumming-up 0.8s linear infinite;
+    -o-animation: drumming-up 0.8s linear infinite;
+    -webkit-animation: drumming-up 0.8s linear infinite;
+    -moz-animation: drumming-up 0.8s linear infinite; }
+  .scenario .notice {
+    position: absolute;
+    top: 440px;
+    right: 0px;
+    color: #FAFDFC; }
+    .scenario .notice p {
+      font-size: 1.4em; }
+
+#scenario-tianjin-eye #tianjin-eye {
+  height: 434px;
+  width: 300px;
+  background: url("../img/tianjin-eye-em-bg.png");
+  background-size: 300px 434px;
+  position: absolute;
+  bottom: 100px;
+  left: -100px; }
+#scenario-tianjin-eye #moon {
+  height: 120px;
+  width: 120px;
+  background: url("../img/moon-bg.png");
+  background-size: 120px 120px;
+  position: absolute;
+  bottom: 540px;
+  right: 0px; }
+#scenario-tianjin-eye p {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 240px;
+  right: 0px; }
+
+#scenario-cycle #cycle {
+  height: 571px;
+  width: 608px;
+  background: url("../img/bicycle-fz-bg.png");
+  background-size: 608px 571px;
+  position: absolute;
+  bottom: 100px;
+  left: -100px; }
+#scenario-cycle #cycle-cloud-1 {
+  height: 115px;
+  width: 200px;
+  background: url("../img/bicycle-cloud-1-bg.png");
+  background-size: 200px 115px;
+  position: absolute;
+  top: 50px;
+  left: 0px; }
+#scenario-cycle #cycle-cloud-2 {
+  height: 100px;
+  width: 180px;
+  background: url("../img/bicycle-cloud-2-bg.png");
+  background-size: 180px 100px;
+  position: absolute;
+  top: 50px;
+  right: 0px; }
+#scenario-cycle p {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 240px;
+  right: 0px; }
+
+#scenario-taishan #taishan {
+  height: 368px;
+  width: 550px;
+  background: url("../img/taishan-bg.png");
+  background-size: 550px 368px;
+  position: absolute;
+  bottom: 100px;
+  left: -200px; }
+#scenario-taishan p {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 240px;
+  right: 0px; }
+
+#scenario-apart #tianjin {
+  height: 650px;
+  width: 427px;
+  background: url("../img/tianjin-bg.png");
+  background-size: 427px 650px;
+  position: absolute;
+  bottom: 100px;
+  right: -200px; }
+#scenario-apart #shanghai {
+  height: 465px;
+  width: 460px;
+  background: url("../img/shanghai-bg.png");
+  background-size: 460px 465px;
+  position: absolute;
+  bottom: 160px;
+  left: -200px; }
+#scenario-apart p {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  left: -40px; }
+
+#scenario-mei-graduation #graduation {
+  height: 402px;
+  width: 700px;
+  background: url("../img/graduation-bg.png");
+  background-size: 700px 402px;
+  position: absolute;
+  bottom: 100px;
+  left: -200px; }
+#scenario-mei-graduation #moon {
+  height: 120px;
+  width: 120px;
+  background: url("../img/moon-bg.png");
+  background-size: 120px 120px;
+  position: absolute;
+  bottom: 540px;
+  right: 0px; }
+#scenario-mei-graduation p {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 240px;
+  right: 0px; }
+
+#scenario-marriage p {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 180px;
+  left: 0px; }
+
+#protagonists {
+  position: fixed;
+  left: 50%;
+  width: 580px;
+  height: 338px;
+  margin-left: -290px;
+  margin-top: 180px;
+  z-index: 100; }
+  #protagonists #balloons {
+    width: 580px;
+    height: 338px;
+    background: url("../img/balloons-bg.png") no-repeat center top; }
+  #protagonists #couple {
+    position: relative;
+    top: -338px;
+    width: 580px;
+    height: 338px;
+    background: url("../img/couple-bg.png") no-repeat center top; }
+
+#navigator {
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+  z-index: 1000; }
+  #navigator ul li {
+    list-style-type: none;
+    width: 20px;
+    height: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: 0px 0px url("../img/lajiao-bg.png") no-repeat; }
+    #navigator ul li a {
+      display: none;
+      position: absolute;
+      right: 20px;
+      color: #F26A47;
+      text-decoration: none; }
+  #navigator ul li:hover, #navigator ul li.selected {
+    background: 0px -18px url("../img/lajiao-bg.png") no-repeat; }
+
+#footer {
+  height: 322px;
+  position: relative;
+  background: url("../img/ground-bg.png") center no-repeat; }
+
+.rocking {
+  animation: rocking 2s linear infinite;
+  -webkit-animation: rocking 2s linear infinite;
+  -moz-animation: rocking 2s linear infinite;
+  -o-animation: rocking 2s linear infinite; }
+
+.soaring {
+  animation-name: soar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: soar;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: soar;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  z-index: 30; }
+
+.swinging {
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: swing;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: swing;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out; }
+
+.cloud {
+  left: 50%;
+  position: absolute;
+  z-index: 0;
+  background-image: url("../img/clouds-bg.png");
+  background-repeat: no-repeat; }
+
+.cloud-1 {
+  width: 136px;
+  height: 98px;
+  background-position: 0px 0px; }
+
+.cloud-2 {
+  width: 136px;
+  height: 98px;
+  background-position: 0px -98px; }
+
+.cloud-3 {
+  width: 160px;
+  height: 116px;
+  background-position: 0px -196px; }
+
+.cloud-4 {
+  width: 160px;
+  height: 116px;
+  background-position: 0px -312px; }
+
+.cloud-5 {
+  width: 117px;
+  height: 81px;
+  background-position: 0px -428px; }
+
+.cloud-6 {
+  width: 117px;
+  height: 81px;
+  background-position: 0px -509px; }
+
+.cloud-7 {
+  width: 140px;
+  height: 97px;
+  background-position: 0px -590px; }
+
+.cloud-8 {
+  width: 140px;
+  height: 97px;
+  background-position: 0px -687px; }

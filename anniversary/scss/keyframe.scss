@@ -1,0 +1,169 @@
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@keyframes soar {
+  50% {
+    transform: translate(0, -14px);
+  }
+}
+
+@-webkit-keyframes soar {
+  50% {
+    -webkit-transform: translate(0, -14px);
+  }
+}
+
+@-moz-keyframes soar {
+  50% {
+    -moz-transform: translate(0, -14px);
+  }
+}
+
+@keyframes swing {
+    50% {
+        -webkit-transform: rotate(1.5deg);
+        -moz-transform: rotate(1.5deg);
+        -o-transform: rotate(1.5deg);
+        transform: rotate(1.5deg);
+    }
+}
+
+@-webkit-keyframes swing {
+    50% {
+        -webkit-transform: rotate(1.5deg);
+        -moz-transform: rotate(1.5deg);
+        -o-transform: rotate(1.5deg);
+        transform: rotate(1.5deg);
+    }
+}
+
+@-moz-keyframes swing {
+    50% {
+        -webkit-transform: rotate(1.5deg);
+        -moz-transform: rotate(1.5deg);
+        -o-transform: rotate(1.5deg);
+        transform: rotate(1.5deg);
+    }
+}
+
+@keyframes striking {
+    0% { background-position: 0px -248px; opacity: 1.0; }
+    7% { background-position: 0px 0px; opacity: 1.0; }
+    10% { opacity: 0.1; }
+    100% { opacity: 0.0; }
+}
+
+@-webkit-keyframes striking {
+    0% { background-position: 0px -248px; opacity: 1.0; }
+    7% { background-position: 0px 0px; opacity: 1.0; }
+    50% { background-position: 0px 0px; opacity: 0.8; }
+    100% { opacity: 0.0; }
+}
+
+@-moz-keyframes striking {
+    0% { background-position: 0px -248px; opacity: 1.0; }
+    7% { background-position: 0px 0px; opacity: 1.0; }
+    50% { background-position: 0px 0px; opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+@-o-keyframes striking {
+    0% { background-position: 0px -248px; opacity: 1.0; }
+    7% { background-position: 0px 0px; opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+@keyframes drumming-up {
+    0% { background-position: right 0px; }
+    95% { background-position: right 5px; }
+}
+
+@-webkit-keyframes drumming-up {
+    0% { background-position: right 0px; }
+    95% { background-position: right 5px; }
+}
+
+@-moz-keyframes drumming-up {
+    0% { background-position: right 0px; }
+    95% { background-position: right 5px; }
+}
+
+@-o-keyframes drumming-up {
+    0% { background-position: right 0px; }
+    95% { background-position: right 5px; }
+}
+
+@-webkit-keyframes rocking {
+    30% {
+      -webkit-transform: rotate(1.5deg);
+      -moz-transform: rotate(1.5deg);
+      -o-transform: rotate(1.5deg);
+      transform: rotate(1.5deg);
+    }
+
+    60% {
+      -webkit-transform: rotate(-1.5deg);
+      -moz-transform: rotate(-1.5deg);
+      -o-transform: rotate(-1.5deg);
+      transform: rotate(-1.5deg);
+    }
+}
+
+@-o-keyframes rocking {
+    30% {
+      -webkit-transform: rotate(1.5deg);
+      -moz-transform: rotate(1.5deg);
+      -o-transform: rotate(1.5deg);
+      transform: rotate(1.5deg);
+    }
+
+    60% {
+      -webkit-transform: rotate(-1.5deg);
+      -moz-transform: rotate(-1.5deg);
+      -o-transform: rotate(-1.5deg);
+      transform: rotate(-1.5deg);
+    }
+}
+
+@-moz-keyframes rocking {
+    30% {
+      -webkit-transform: rotate(1.5deg);
+      -moz-transform: rotate(1.5deg);
+      -o-transform: rotate(1.5deg);
+      transform: rotate(1.5deg);
+    }
+
+    60% {
+      -webkit-transform: rotate(-1.5deg);
+      -moz-transform: rotate(-1.5deg);
+      -o-transform: rotate(-1.5deg);
+      transform: rotate(-1.5deg);
+    }
+}
+
+@keyframes rocking {
+    30% {
+      -webkit-transform: rotate(1.5deg);
+      -moz-transform: rotate(1.5deg);
+      -o-transform: rotate(1.5deg);
+      transform: rotate(1.5deg);
+    }
+
+    60% {
+      -webkit-transform: rotate(-1.5deg);
+      -moz-transform: rotate(-1.5deg);
+      -o-transform: rotate(-1.5deg);
+      transform: rotate(-1.5deg);
+    }
+}

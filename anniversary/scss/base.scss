@@ -1,0 +1,26 @@
+@import 'reset';
+
+$font-stack:"Microsoft YaHei",Lora,Georgia,"Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+
+$primary-color: #333;
+$primary-border-color: #DDD;
+$primary-background-color:#F8F8F8;
+
+body {
+    font:  63% $font-stack;
+    color: $primary-color;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin top-bottom-border($width, $color) {
+    border-top:solid $width $color;
+    border-bottom:solid $width $color;
+}
+
+/*.box { @include border-radius(10px); }*/
