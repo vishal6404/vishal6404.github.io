@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="loading.css">
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<link rel="stylesheet" href="test.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
@@ -92,7 +90,7 @@
 		</div>
 		<div class="row message">
 			<div class="col-md-12">
-				<p>Today is...</p>
+				<!-- <p>Today is...</p>
 				<p>as beautiful as other days</p>
 				<p>but you realize</p>
 				<p>another year has gone</p>
@@ -138,56 +136,49 @@
 				<p>and make it the best memory..</p>
 				<p>lastly...</p>
 				<p>I'd like to wish you one more time</p>
-				<p>a very happy birthday Shreya ❤️ </p>
+				<p>a very happy birthday Shreya ❤️ </p> -->
+				<p>a message</p>
+				<p>yet to be written</p>
+				<p>a message</p>
+				<p>yet to be written</p>
+				<p>a message</p>
+				<p>yet to be written</p>
+				<p>a message</p>
+				<p>yet to be written</p>
+				<p>a message</p>
+				<p>yet to be written</p>
 			</div>
 		</div>
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row" >
-				<div class="col-md-6 text-center col-md-offset-3" >
+				<div class="col-md-6 text-center col-md-offset-3 " >
 					
-					<button class="btn btn-primary  " id="turn_on" style="font-size: 1.5em;margin-bottom: 10px;">Turn On Lights</button>
-					<button class="btn btn-primary" id="play" style="font-size: 1.5em; margin-bottom: 10px;">Play Music</button>
-					<button class="btn btn-primary" id="bannar_coming" style="font-size: 1.5em; margin-bottom: 10px;">Let's Decorate</button>
-					<button class="btn btn-primary" id="balloons_flying" style="font-size: 1.5em; margin-bottom: 10px;">Fly With Balloons</button>
-					<button class="btn btn-primary" id="cake_fadein" style="font-size: 1.5em; margin-bottom: 10px;">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle" style="font-size: 1.5em; margin-bottom: 10px;"> Light Candle</button>
-					<button class="btn btn-primary" id="wish_message" style="font-size: 1.5em; margin-bottom: 10px;">Happy Birthday</button>
-					<button class="btn btn-primary" id="story" style="font-size: 1.5em; margin-bottom: 10px;">A mesage for you</button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="turn_on" style="font-size: 1.8em; margin-bottom: 10px;" onclick="addCode()">Turn On Lights</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="play" style="font-size: 1.8em; margin-bottom: 10px;">Play Music</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="bannar_coming" style="font-size: 1.8em; margin-bottom: 10px;">Shall We Decorate</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="balloons_flying" style="font-size: 1.8em; margin-bottom: 10px;">Fly With Balloons</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="cake_fadein" style="font-size: 1.8em; margin-bottom: 10px;">Most Delicious Cake Ever</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="light_candle" style="font-size: 1.8em; margin-bottom: 10px;"> Light Candle</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="wish_message" style="font-size: 1.8em; margin-bottom: 10px;">Happy Birthday Boo</button>
+					<button class="btn btn-primary btn-block" role="button" aria-pressed="true" id="story" style="font-size: 1.8em; margin-bottom: 10px;">A mesage for you</button>
 				</div>
 			</div>
-			<!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
 		</div>
 
 
 	</div>
-	<div class="tech-slideshow" id="remove">
-		<div class="mover-1"></div>
-	</div>
+	<div id="add_to_me"> 
+		 <!--creating the dynamic div here via addCode()  -->
+	</div> 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="effect.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-//   for removing the slideshow
-//   document.getElementById('cake_fadein').onclick = event=>document.getElementById('remove')
-//   .parentElement.removeChild(document.getElementById('remove'));
-// end here slideshow
-  ga('create', 'UA-58229732-1', 'auto');
-  ga('send', 'pageview');
+<script> 
+	function addCode() { 
+		document.getElementById("add_to_me").insertAdjacentHTML("afterend", 
+			'<div class="tech-slideshow" id="remove"><div class="mover-1"></div></div>'); 
+	} 
+</script> 
 
-</script>
 </html>
