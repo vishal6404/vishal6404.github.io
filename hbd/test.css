@@ -1,0 +1,46 @@
+.tech-slideshow {
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 100vh;
+  width: inherit;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  /* background: url(/pcture/2.jpg); */
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s cubic-bezier(1, 0.67, 0.24, 1.49) infinite
+    alternate;
+}
+/* .tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+} */
+
+@keyframes moveSlideshow {
+  100% {
+    background-position: -100% 0%;
+    /* transform: translateX(-66.6666%); */
+  }
+}

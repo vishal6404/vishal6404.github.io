@@ -12,10 +12,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
+	<link rel="stylesheet" href="test.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
 
 <body>
+	
 	<div class="loading"></div>
 	<audio class="song" controls loop>
         <source src="shreya.mp3"></source>
@@ -167,6 +169,9 @@
 
 
 	</div>
+	<div class="tech-slideshow" id="remove">
+		<div class="mover-1"></div>
+	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -176,7 +181,10 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+//   for removing the slideshow
+//   document.getElementById('cake_fadein').onclick = event=>document.getElementById('remove')
+//   .parentElement.removeChild(document.getElementById('remove'));
+// end here slideshow
   ga('create', 'UA-58229732-1', 'auto');
   ga('send', 'pageview');
 
