@@ -34,6 +34,7 @@
 			self.$timelineBar.css({
 				top: calcFirstItemHeight,
 				bottom: calcLastItemHeight
+				
 			});
 		}
 	}
