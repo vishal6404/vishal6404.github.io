@@ -1,12 +1,14 @@
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
-  const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
+  const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0].innerHTML = `<span>${textBoxChars.innerHTML
+    .split("")
+    .join("</span><span>")}</span`;;
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-  textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-    .split("")
-    .join("</span><span>")}</span`;
+//   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+//     .split("")
+//     .join("</span><span>")}</span`;
 
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
@@ -270,8 +272,7 @@ const animationTimeline = () => {
   // tl.timeScale(2);
 
   // Restart Animation on click
-  const replyBtn = document.getElementById("replay");
-  replyBtn.addEventListener("click", () => {
+  const replyBtn = document.getElementById("replay").addEventListener("click", () => {
     tl.restart();
   });
 };
@@ -296,7 +297,7 @@ const fetchData = () => {
 };
 
 // Run fetch and animation in sequence
-const resolveFetch = () => {
+const resolveFetch = function() => {
   return new Promise((resolve, reject) => {
     fetchData();
     resolve("Fetch done!");
