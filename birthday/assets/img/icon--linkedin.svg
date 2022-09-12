@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-228.000000, -290.000000)">
+        <g id="icon--linkedin" transform="translate(229.000000, 291.000000)">
+            <path d="M24,0 C10.746,0 0,10.746 0,24 C0,37.254 10.746,48 24,48 C37.254,48 48,37.254 48,24 C48,10.746 37.254,0 24,0 Z" id="Path" stroke="#BBE9F0"></path>
+            <polygon id="Path" fill="#FFFFFF" points="20 32 16 32 16 20 20 20"></polygon>
+            <path d="M18,18.218 C16.786,18.218 15.8,17.226 15.8,16 C15.8,14.776 16.784,13.782 18,13.782 C19.216,13.782 20.2,14.776 20.2,16 C20.2,17.226 19.214,18.218 18,18.218 Z" id="Path" fill="#FFFFFF"></path>
+            <path d="M34,32 L30.004,32 L30.004,26.278 C30.004,22.516 26,22.834 26,26.278 L26,32 L22,32 L22,20 L26,20 L26,22.186 C27.744,18.954 34,18.714 34,25.282 L34,32 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
